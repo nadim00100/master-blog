@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "author": "John Doe",
+        "title": "First Post",
+        "content": "This is my first post."
+    },
+    {
+        "id": 2,
+        "author": "Jane Doe",
+        "title": "Second Post",
+        "content": "This is another post."
+    },
+    {
+        "id": 3,
+        "author": "Alice Smith",
+        "title": "A Day in the Park",
+        "content": "Today I went for a walk in the park and it was lovely."
+    },
+    {
+        "id": 4,
+        "author": "Bob Johnson",
+        "title": "Learning Python",
+        "content": "Python is a versatile and beginner-friendly programming language."
+    },
+    {
+        "id": 5,
+        "author": "Charlie Brown",
+        "title": "Coffee or Tea?",
+        "content": "Let\u2019s settle this once and for all \u2014 which is better?"
+    },
+    {
+        "id": 6,
+        "author": "Diana Prince",
+        "title": "Fitness Journey",
+        "content": "My fitness journey started last year, and here\u2019s what I\u2019ve learned."
+    },
+    {
+        "id": 7,
+        "author": "Ethan Hunt",
+        "title": "Mission Possible",
+        "content": "Facing your fears and chasing your dreams is always worth it."
+    },
+    {
+        "id": 8,
+        "author": "Fiona Gallagher",
+        "title": "Family Ties",
+        "content": "Family means everything \u2014 here\u2019s why."
+    },
+    {
+        "id": 9,
+        "author": "George Lucas",
+        "title": "A Galaxy Far Away",
+        "content": "Why storytelling in space is so magical."
+    },
+    {
+        "id": 10,
+        "author": "Hannah Montana",
+        "title": "The Best of Both Worlds",
+        "content": "Balancing two lives can be tough, but rewarding."
+    }
+]
