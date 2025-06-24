@@ -19,15 +19,12 @@ def index():
 @app.route('/add', methods=['GET', 'POST'])
 def add():
     if request.method == 'POST':
-        # Extract form data
         title = request.form['title']
         author = request.form['author']
         content = request.form['content']
 
-        # Load existing posts
         blog_posts = load_posts()
 
-        # Create new post with unique id
         new_post = {
             "id": blog_posts[-1]["id"] + 1 if blog_posts else 1,
             "title": title,
@@ -35,15 +32,20 @@ def add():
             "content": content
         }
 
-        # Append and save
         blog_posts.append(new_post)
         save_posts(blog_posts)
 
-        # Redirect to index page
         return redirect(url_for('index'))
 
-    # For GET request, show the add form
     return render_template('add.html')
+
+@app.route('/delete/<int:post_id>', methods=['POST'])
+def delete(post_id):
+    blog_posts = load_posts()
+    # Filter out the post with matching id
+    blog_posts = [post for post in blog_posts if post['id'] != post_id]
+    save_posts(blog_posts)
+    return redirect(url_for('index'))
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8000, debug=True)
