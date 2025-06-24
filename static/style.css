@@ -28,7 +28,7 @@ h1 {
     margin: 10px 0;
 }
 
-/* Shared form styling */
+/* Form styling (used in add.html and update.html) */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -61,7 +61,7 @@ form textarea {
     box-sizing: border-box;
 }
 
-/* Button base */
+/* Button base style */
 button,
 button[type="submit"] {
     padding: 10px 20px;
@@ -69,29 +69,34 @@ button[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     color: white;
-    margin-right: 10px;
+    font-weight: bold;
 }
 
-/* Default button (update) */
-button {
+/* Add or Update button */
+button,
+.update-button {
     background-color: #0275d8;
 }
 
-button:hover {
+button:hover,
+.update-button:hover {
     background-color: #025aa5;
 }
 
-/* Delete button inside post cards */
-.post form {
-    display: inline;
-}
-
-.post button {
+/* Delete button */
+.delete-button {
     background-color: #d9534f;
 }
 
-.post button:hover {
+.delete-button:hover {
     background-color: #c9302c;
+}
+
+/* Flex layout for post action buttons */
+.post-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 /* Navigation links */
