@@ -1,12 +1,7 @@
 from flask import Flask, render_template, request
 import json
 
-
 app = Flask(__name__)
-
-
-
-
 
 def load_posts():
     with open('blog_posts.json', 'r') as f:
@@ -20,10 +15,9 @@ def index():
 @app.route('/add', methods=['GET', 'POST'])
 def add():
     if request.method == 'POST':
-        # We will fill this in the next step
+        # To be implemented in the next step
         pass
     return render_template('add.html')
 
-
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=8000, debug=True)
